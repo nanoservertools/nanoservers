@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  nanoserver-1809-nodejs-erbium:
+    image: nanoservertools/nodejs:0.1-1809-12.18.3-lts
+    build: 
+      context: .
+      dockerfile: .\Dockerfile
+      args: 
+        - FromRepo=mcr.microsoft.com/windows
+        - FromImage=nanoserver
+        - FromTag=1809
+        - NodeVersion=v12.18.3
+        - NodePlatform=win-x64
+  nanoserver-1903-nodejs-erbium:
+    image: nanoservertools/nodejs:0.1-1903-12.18.3-lts
+    build: 
+      context: .
+      dockerfile: .\Dockerfile
+      args: 
+        - FromRepo=mcr.microsoft.com/windows
+        - FromImage=nanoserver
+        - FromTag=1903
+        - NodeVersion=v12.18.3
+        - NodePlatform=win-x64
+  nanoserver-1909-nodejs-erbium:
+    image: nanoservertools/nodejs:0.1-1909-12.18.3-lts
+    build: 
+      context: .
+      dockerfile: .\Dockerfile
+      args: 
+        - FromRepo=mcr.microsoft.com/windows
+        - FromImage=nanoserver
+        - FromTag=1909
+        - NodeVersion=v12.18.3
+        - NodePlatform=win-x64
+  nanoserver-2004-nodejs-erbium:
+    image: nanoservertools/nodejs:0.1-2004-12.18.3-lts
+    build: 
+      context: .
+      dockerfile: .\Dockerfile
+      args: 
+        - FromRepo=mcr.microsoft.com/windows
+        - FromImage=nanoserver
+        - FromTag=2004
+        - NodeVersion=v12.18.3
+        - NodePlatform=win-x64
